@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Data Fetch and Process Script is designed to process NFT related details at real time. It's implemented in Node.js using TypeScript.
+The Data Fetch and Process Script is designed to process NFT related details in real time. It's implemented in Node.js using TypeScript.
 
 ## Usage
 
