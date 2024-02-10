@@ -1,0 +1,20 @@
+{
+  "name": "nft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-fetch": "tsc fetchandStore.ts && node fetchandStore.js",
+    "start-post": "tsc postProcessing.ts && node postProcessing.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.17",
+    "axios": "^1.6.7",
+    "mysql2": "^3.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
