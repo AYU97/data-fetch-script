@@ -47,4 +47,26 @@ npm run start-post
 ### Assumptions
 
 - The "order.validTo" does not exist, it is "validUntil"
-- Please put your Mysql database details like : host, user , password , database
+- Please put your Mysql database details like : host, user , password , database:(assumed to be "nft")
+- create the table for your db 
+ ```bash 
+CREATE TABLE IF NOT EXISTS nft.activity (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        contract_address VARCHAR(255),
+        token_index VARCHAR(255),
+        listing_price DECIMAL(18, 6),
+        maker VARCHAR(255),
+        listing_from TIMESTAMP,
+        listing_to TIMESTAMP,
+        event_timestamp TIMESTAMP
+      )
+
+
+ CREATE TABLE IF NOT EXISTS nft.tokens (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        contract_address VARCHAR(255),
+        index VARCHAR(255),
+        current_price DECIMAL(18, 6)
+      )
+```
+
